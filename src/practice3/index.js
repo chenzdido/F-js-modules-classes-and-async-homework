@@ -15,7 +15,8 @@ const getPoetry = () => {
       result.push(data.author);
       result.push(data.content);
       return result;
-    });
+    })
+    .catch((error) => console.error("Error:", error));
 };
 
 export default getPoetry;
